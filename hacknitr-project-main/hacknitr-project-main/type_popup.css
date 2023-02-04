@@ -1,0 +1,260 @@
+body {
+    width: 400px;
+    color: black;
+    font-size: 14px;
+}
+
+.bodycontainer {
+    padding: 15px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.recordButton {
+    display: inline;
+    position: relative;
+    width: 50px;
+}
+
+.timericon {
+    display: inline;
+}
+
+.report {
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    left: 160px
+}
+
+.trashImg {
+    max-width: 20px;
+    vertical-align: middle;
+
+}
+
+.site_lists {
+    text-align: left;
+}
+
+.prod_site_lists {
+    column-span: none;
+    overflow: auto;
+}
+
+button {
+    color: black;
+    vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*/ .moneySection {
+    display: block;
+    position: relative;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    bottom: 45px;
+}
+
+.piggybank {
+    position: relative;
+    z-index: 5;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+#amtofmoney {
+    display: inline;
+    position: relative;
+    top: 120px;
+    left: 100px;
+    z-index: 1;
+}
+
+.pig {
+    position: relative;
+    grid-column: 2;
+    z-index: 0;
+}
+
+#title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1E2F97;
+}
+
+.heading {
+    font-size: x-large;
+    font-weight: 350;
+    color: #3490dc;
+    ;
+}
+
+#addSiteSection label,
+#addSiteSectionButtons,
+#addCancelButton,
+#addSubmitButton {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#addSiteSection {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sitelist {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.sitelist ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sitelist h3 {
+    font-size: large;
+}
+
+.sitelist img {
+    float: right;
+}
+
+.sitelist #prodSiteLabel,
+.prodTimelabel {
+    color: green;
+}
+
+.sitelist #unprodSiteLabel,
+.unprodTimelabel {
+    color: rgb(192, 16, 16);
+}
+
+.prodTimelabel,
+.unprodTimelabel {
+    margin-bottom: 3px;
+
+}
+
+.divider {
+    border-width: 4px;
+    border-color: #232ae2;
+    box-shadow: none;
+}
+
+#difficultyHeading {
+    font-size: medium;
+}
+
+#difficultyButton,
+#shopButton {
+    margin-bottom: 6px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider.round:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider.round {
+    background-color: #2196F3;
+}
+
+input:focus+.slider.round {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider.round:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#addSiteSwitch {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+#focusSiteSwitch {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#addSiteSwitch label {
+    margin-left: 10px;
+}
+
+#focusSiteSwitch label {
+    margin-left: 104px;
+}
+
+#focusBadge {
+    font-size: medium;
+}

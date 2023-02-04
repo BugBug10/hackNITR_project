@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Motivation Game",
+    "version": "1.0",
+    "description": "TODO",
+    "icons": {
+        "48": "images/small_icon.png",
+        "128": "images/reg_icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "http://www.google.com/*",
+                "https://*/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_icon": "images/reg_icon.png",
+        "default_popup": "type_popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "storage",
+        "notifications"
+    ],
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+U",
+                "mac": "Command+U"
+            }
+        }
+    }
+}

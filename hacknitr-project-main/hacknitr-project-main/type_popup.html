@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Click It</title>
+    <link rel="stylesheet" href="./type_popup.css">
+    <link rel="stylesheet" href="./library/bootstrap/css/bootstrap.css">
+    <script src="./library/bootstrap/js/bootstrap.js"></script>
+    <script type="module" src="type_popup.js"></script>
+    <script src="notifications.js"></script>
+</head>
+
+<body>
+    <div class="bodycontainer">
+        <div class="TimerStart">
+            <h1 id="title">Motivation Tracker</h1>
+        </div>
+
+        <div class="section reportSummary">
+            <h2 class="heading">Time Control and Summary</h2>
+            <p class="prodTimelabel">Time on productive sites:
+                <span id="prod-time">0 secs</span>
+            </p>
+            <p class="unprodTimelabel">Time on unproductive sites:
+                <span id="unprod-time">0 secs</span>
+            </p>
+            <button class="btn btn-sm btn-primary" type="button" id="reportButton">View Time Report </button>
+            <p id="addSiteSwitch">
+                <span class="siteSwitchLabel">Pause New Site Recognition</span>
+                <label class="switch">
+                    <input type="checkbox" id="pauseAddSiteSwitch">
+                    <span class="slider round">
+                    </span>
+                </label>
+            </p>
+            <p id="focusSiteSwitch">
+                <span class="siteSwitchLabel">Focus Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="focusSwitch">
+                    <span class="slider round">
+                    </span>
+                </label>
+                <br />
+                <span class="badge text-bg-warning" id="focusBadge">
+                    Focus Time:
+                    <span id="focusTime"></span>
+                </span>
+            </p>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="section">
+            <h2 class="heading">Site Details</h2>
+            <button class="btn btn-sm btn-primary" id="addSiteButton">Add Site</button>
+            <p id="addSiteSection">
+                <input class="form-control siteinput" placeholder="site domain" id="addSiteDomain" />
+                <label class="form-check-label">
+                    Current site:
+                    <input type="checkbox" class="form-check-input" id="addCurrentSite"></input>
+                </label>
+                <label class="form-check-label">
+                    Productive:
+                    <input type="checkbox" class="form-check-input" id="addProductiveSelection"></input>
+                </label>
+                <br />
+                <button type="button" class="btn btn-sm btn-danger" id="addCancelButton">Cancel</button>
+                <button type="button" class="btn btn-sm btn-primary" id="addSubmitButton">Submit</button>
+            </p>
+
+            <button type="button" class="btn btn-sm btn-info" id="detailButton">
+                <span id="detailButtonText">Show</span>
+                Site Details
+            </button>
+
+            <div class="sitelist">
+                <div class="list-group prod_site_lists">
+                    <h3 id="prodSiteLabel"></h3>
+                    <ul id="prodSiteList"></ul>
+                </div>
+                <div class="list-group unprod_site_lists">
+                    <h3 id="unprodSiteLabel"></h3>
+                    <ul id="unprodSiteList"></ul>
+                </div>
+            </div>
+        </div>
+        <hr class="divider" />
+
+        <div class="section">
+            <h2 class="heading piggybank">Your Productive Piggybank, Mr.BaconStrip</h2>
+            <p class="piggybank">The more time you spend being productive, the more money you will accumulate! Use your
+                money to buy accessories for Mr.BaconStrip. </p>
+            <p id="amtofmoney">$00.00</p>
+            <div class="moneySection">
+                <img class="pig" id="pig" src="images/pig.png">
+            </div>
+            <button class="btn btn-sm btn-primary" id="difficultyButton">
+                <span id="difficultyButtonText">Show More</span>
+            </button>
+            <button class="btn btn-sm btn-warning" id="shopButton"><a href="piggy_shop.html">Shop</a></button>
+            <div id="difficultySection">
+                <h3 id="difficultyHeading">Difficulty Adjustment (1-100)</h3>
+                <div class="slidecontainer">
+                    <span>Difficulty Value:
+                        <span id="difficultyValue"></span>
+                    </span>
+                    <br />
+                    <input type="range" min="1" max="100" value="50" class="slider" id="difficultyRange">
+                </div>
+                <button class="btn btn-sm btn-primary" id="difficultySubmitButton">Submit</button>
+            </div>
+        </div>
+
+        <hr class="divider" />
+    </div>
+</body>
+
+</html>
